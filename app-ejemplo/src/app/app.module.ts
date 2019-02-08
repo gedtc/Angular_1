@@ -4,7 +4,7 @@ import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormAltaComponent } from './form-alta/form-alta.component';
-
+/* importar servicio tambien aqui */
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +15,7 @@ import { FormAltaComponent } from './form-alta/form-alta.component';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [/* aqui va el servicio */],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
