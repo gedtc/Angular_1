@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ListaService} from '../lista.service';
+import { Portfolio } from '../portfolio';
 
 @Component({
   selector: 'app-lista',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaComponent implements OnInit {
   arrayPortfolios : Array<Portfolio>;
-  constructor(private servicioP : PortfoliosService) { }
+  constructor(private servicioP : ListaService) { }
 
   ngOnInit() {
     this.actualizar();
